@@ -19,19 +19,19 @@ class Recommend(View):
         category = data["category"]
         print(category)
         if category == 'IT 모바일':
-            csv_file = pd.read_csv('\\home\\ubuntu\\csv\\IT 모바일_YES베스트.csv')
+            csv_file = pd.read_csv('/home/ubuntu/csv/IT 모바일_YES베스트.csv')
         elif category == '경제 경영':
-            csv_file = pd.read_csv('\\home\\ubuntu\\csv\\경제 경영_YES베스트.csv')
+            csv_file = pd.read_csv('/home/ubuntu/csv/경제 경영_YES베스트.csv')
         elif category == '역사':
-            csv_file = pd.read_csv('\\home\\ubuntu\\csv\\역사_YES베스트.csv')
+            csv_file = pd.read_csv('/home/ubuntu/csv/역사_YES베스트.csv')
         elif category == '자연과학':
-            csv_file = pd.read_csv('\\home\\ubuntu\\csv\\자연과학_YES베스트.csv')
+            csv_file = pd.read_csv('/home/ubuntu/csv/자연과학_YES베스트.csv')
         elif category == '소설_시_희곡':
-            csv_file = pd.read_csv('\\home\\ubuntu\\csv\\소설_시_희곡_YES베스트.csv')
+            csv_file = pd.read_csv('/home/ubuntu/csv/소설_시_희곡_YES베스트.csv')
         elif category == '사회 정치':
-            csv_file = pd.read_csv('\\home\\ubuntu\\csv\\사회 정치_YES베스트.csv')
+            csv_file = pd.read_csv('/home/ubuntu/csv/사회 정치_YES베스트.csv')
         elif category == '만화_라이트노벨':
-            csv_file = pd.read_csv('\\home\\ubuntu\\csv\\만화_라이트노벨_YES베스트.csv')
+            csv_file = pd.read_csv('/home/ubuntu/csv/만화_라이트노벨_YES베스트.csv')
 
         csv_file = csv_file[['상품명', 'ISBN', '설명']]
 
